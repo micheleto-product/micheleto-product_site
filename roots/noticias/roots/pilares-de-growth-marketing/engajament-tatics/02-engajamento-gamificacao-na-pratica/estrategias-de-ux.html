@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheleto UX Strategy</title>
+    <link rel="stylesheet" href="../ux-strategy/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpofyKGjJUAqXIn/sJ5cGz5eQI0LUw+HJscQrEoqL5bTaASB/Tj0g+m/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!------------------------------------------- MENU ------------------------------------>
+<body id="app">
+    
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <a href="../../index.html"><img class="menu-logo" src="/img/menu/logo.svg"></a>
+        <li class="menu-icon" onclick="toggleMenu()">&#9776;<a href="#">Serviços</a></li>
+        <li class="menu-pag"><a href="../micheleto/index.html">Micheleto</a></li>
+        <li class="menu-pag"><a href="../noticias/index.html">Notícias</a></li>
+        <li class="menu-pag"><a href="../contato/index.html">Contato</a></li>
+        <li class="menu-pag"><a href="../academy/index.html" class="academy">Academy</a></li>
+        <img src="img/menu/lupa.svg"  class="menu-imagem">
+        <img src="img/menu/carrinho.svg"  class="menu-imagem">
+      </ul>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </header>
+
+  
+
+      <aside class="sidebar" id="sidebar">
+        <ul class="sub-menu-produtos">
+          <h2 class="produtos"> Serviços </h2>
+          <li class="expandable1"><a href="">UX Strategy</a>
+            <ul class="sub-menu">
+              <li><a href="">Design Thinking</a></li>
+              <li><a href="">User Journey Mapping</a></li>
+              <li><a href="">Value Proposition Design</a></li>
+              <li><a href="">Product Roadmapping</a></li>
+              <li><a href="">Service Design</a></li>
+              <li><a href="">Competitive Analysis</a></li>
+              <li><a href="">Customer Experience (CX)</a></li>
+              <li><a href="">Growth Design</a></li>
+              <li><a href="">Customer Journey Analytics</a></li>
+            </ul>
+          </li>
+          <li class="expandable2"><a href="">User Research</a>
+            <ul class="sub-menu">
+              <li><a href="">User Interviews</a></li>
+              <li><a href="">Surveys & Questionnaires</a></li>
+              <li><a href="">Usability Testing</a></li>
+              <li><a href="">Personas Creation</a></li>
+              <li><a href="">Heuristic Evaluation</a></li>
+              <li><a href="">Data Analysis</a></li>
+              <li><a href="">Remote Research Methods</a></li>
+              <li><a href="">Quantitative Research</a></li>
+            </ul>
+          </li>
+          <li class="expandable3"><a href="">Interaction Design</a>
+            <ul class="sub-menu">
+              <li><a href="">Prototyping (Low & High Fidelity)</a></li>
+              <li><a href="">Microinteractions</a></li>
+              <li><a href="">Accessibility Design</a></li>
+              <li><a href="">UI Patterns</a></li>
+              <li><a href="">Task Flows</a></li>
+              <li><a href="">User Flows</a></li>
+              <li><a href="">Animação</a></li>
+              <li><a href="">Voice User Interface (VUI) Design</a></li>
+              <li><a href="">Virtual Reality (VR) Interfaces</a></li>
+            </ul>
+          </li>
+          <li class="expandable4"><a href="">Visual Design</a>
+            <ul class="sub-menu">
+              <li><a href="">Branding & Identity</a></li>
+              <li><a href="">Color Theory</a></li>
+              <li><a href="">Typography</a></li>
+              <li><a href="">Layout Design</a></li>
+              <li><a href="">Iconography</a></li>
+              <li><a href="">Responsive Design</a></li>
+              <li><a href="">Audiovisual</a></li>
+              <li><a href="">Design Systems</a></li>
+            </ul>
+          </li>
+          <li class="expandable5"><a href="">Business Analysis</a>
+            <ul class="sub-menu">
+              <li><a href="">Competitive Benchmarking</a></li>
+              <li><a href="">SWOT Analysis</a></li>
+              <li><a href="">Market Research</a></li>
+              <li><a href="">KPIs for UX</a></li>
+              <li><a href="">LTV (Lifetime Value)</a></li>
+              <li><a href="">Data Science</a></li>
+              <li><a href="">User Retention Analysis</a></li>
+            </ul>
+          </li>
+          <li class="expandable6"><a href="">Web Development</a>
+            <ul class="sub-menu">
+              <li><a href="">HTML/CSS</a></li>
+              <li><a href="">JavaScript Frameworks (React, Angular)</a></li>
+              <li><a href="">CSS Frameworks (Bootstrap, Tailwind)</a></li>
+              <li><a href="">Web Performance Optimization</a></li>
+              <li><a href="">Cross-Browser Compatibility</a></li>
+              <li><a href="">Accessibility Implementation</a></li>
+              <li><a href="">Progressive Web Apps (PWA)</a></li>
+            </ul>
+          </li>
+          <li class="expandable7"><a href="">Content Strategy</a>
+            <ul class="sub-menu">
+              <li><a href="">Content Audits</a></li>
+              <li><a href="">SEO Strategy</a></li>
+              <li><a href="">Copywriting for UX</a></li>
+              <li><a href="">Tone & Voice Guidelines</a></li>
+              <li><a href="">Editorial Calendars</a></li>
+              <li><a href="">CRM</a></li>
+              <li><a href="">Social Media Strategy</a></li>
+              <li><a href="">Content Personalization</a></li>
+            </ul>
+          </li>
+          <li class="expandable8"><a href="">Information Architecture</a>
+            <ul class="sub-menu">
+              <li><a href="">Site Mapping</a></li>
+              <li><a href="">Card Sorting</a></li>
+              <li><a href="">Navigation Design</a></li>
+              <li><a href="">Content Hierarchy</a></li>
+              <li><a href="">Wireframing</a></li>
+              <li><a href="">Mental Models</a></li>
+              <li><a href="">CMS Structure</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+<!-------------------------------------------- MENU ------------------------------------>
+<!------------------------------------------- Página ------------------------------------>
+
+
+
+<main>
+
+
+    <nav aria-label="breadcrumb">
+        <span class="breadcrumb">
+          <a href="/">Início</a> /
+          <a href="/noticias">Notícias</a> /
+          <a href="#">Estratégias de UX</a>
+        </span>
+    </nav>
+
+    <div class="title-pag">
+        <h1>Estratégias de UX: Como criar uma estratégia de UX que impulsiona o crescimento do seu negócio</h1>
+        <img src="../ux-strategy/img/main/US-UX-Strategy/img-title.png" alt="Estratégias de UX">
+    </div>
+  
+</main>
+
+
+
+<section class="accordion">
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">1</span>
+        <h2>Como definir objetivos claros para sua estratégia de UX?</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details>
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">2</span>
+        <h2>Alinhe Negócios e Usuário: Como Crescer com UX?</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details> 
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">3</span>
+        <h2>Mapeamento da jornada do usuário: um guia para a UX Strategy.</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details>
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">4</span>
+        <h2>Prototipação e testes: validando sua estratégia de UX na prática.</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details>
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">5</span>
+        <h2>UX Strategy: como entender o contexto do seu usuário?</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details>
+
+    <div class="barra-cinza"></div> 
+
+    <details>
+      <summary>
+        <span class="circle">6</span>
+        <h2>Depoimento do cliente satisfeito</h2>
+        <span class="icon"></span>
+      </summary>
+      <div class="content">
+        <p>
+          Em um mercado cada vez mais competitivo, a <strong>experiência do usuário (UX)</strong> se tornou um diferencial 
+          crucial para o sucesso de qualquer negócio. Você já se perguntou se seus investimentos em marketing 
+          estão realmente convertendo em resultados? Uma <strong>estratégia de UX</strong> bem definida, com objetivos claros e 
+          mensuráveis, pode ser a chave para otimizar seus esforços e maximizar o retorno do seu investimento.
+        </p>
+  
+        <p>
+          Uma <strong>estratégia de UX</strong> sem objetivos é como um investimento sem direção. Ela pode gerar alguma 
+          atividade, mas dificilmente trará o retorno esperado. Objetivos claros permitem:
+        </p>
+  
+        <ul>
+          <li>
+            <p><strong>Alinhar UX com metas de negócio:</strong> Conecte diretamente o UX com o aumento de conversões, retenção de clientes e crescimento da receita.</p>
+          </li>
+          <li>
+            <p><strong>Mensurar o impacto do UX:</strong> Acompanhe o progresso e demonstre o valor do UX para o seu negócio com dados concretos.</p>
+          </li>
+          <li>
+            <p><strong>Otimizar seus investimentos:</strong>  Direcione recursos para as áreas que realmente impactam a experiência do usuário e geram resultados.</p>
+          </li>
+        </ul>
+  
+        <p>
+          Para garantir que sua estratégia de UX traga resultados tangíveis, é essencial definir objetivos utilizando metodologias comprovadas:
+        </p>
+  
+        <ul>
+          <li>
+            <p>
+              <strong>Objetivos SMART:</strong> Garanta que seus objetivos sejam Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Alinhamento com Objetivos de Negócio:</strong> Integre a estratégia de UX aos seus objetivos de negócio, criando uma sinergia que impulsione o crescimento.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Expertise Especializada:</strong> Contar com uma equipe de UX experiente é fundamental para desenvolver e implementar uma estratégia eficaz.
+            </p>
+          </li>
+        </ul>
+  
+        <p>
+          Quer saber mais sobre como alinhar UX com seus objetivos de negócio? Assista ao nosso vídeo no YouTube:
+        </p>
+  
+        <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/seu_codigo_do_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <p>
+          Maximize o retorno do seu investimento em marketing com uma estratégia de UX eficaz. Consulte meus serviços especializados em UX Strategy e descubra como posso ajudar a impulsionar o crescimento do seu negócio.
+        </p>
+  
+        <div class="content-button"><button>Veja meus serviços que podem te ajudar</button> </div>
+      </div>
+    </details>
+
+    <div class="barra-cinza"></div> 
+
+</section>
+
+<section class="carousel-container">
+  <h2>Serviços que Micheleto recomenda</h2>
+  <div class="carousel">
+    <div class="card">
+      <img src="../ux-strategy/img/main/US-UX-Strategy/competitive-analysis.svg" alt="Competitive Analysis">
+      <h3>Competitive Analysis</h3>
+      <p>+ Serviços de UX Strategy</p>
+      <span class="icon-card"></span>
+      <br>
+      <button>VER SERVIÇO</button>
+    </div>
+    <div class="card">
+      <img src="../ux-strategy/img/main/US-UX-Strategy/personas-creation.svg" alt="Competitive Analysis">
+      <h3>Personas Creation</h3>
+      <p>+ Serviços de User Research</p>
+      <span class="icon-card"></span>
+      <br>
+      <button>VER SERVIÇO</button>
+    </div>
+    <div class="card">
+      <img src="../ux-strategy/img/main/US-UX-Strategy/site-mapping.svg" alt="Competitive Analysis">
+      <h3>Site Mapping</h3>
+      <p>+ Serviços de Information Architecture</p>
+      <span class="icon-card"></span>
+      <br>
+      <button>VER SERVIÇO</button>
+    </div>
+    </div>
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+    
+<!------------------------------------------- Página ------------------------------------>
+<!------------------------------------------- Footer ------------------------------------>
+<footer>
+    <section>
+      <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=11910725225" target="_blank">
+          <img src="img/footer/whatsapp (2).png" alt="WhatsApp">
+        </a>
+      </div>
+    </section>
+    <div class="linha-vermelha">
+    </div>
+    <br>
+    <section class="boxes">
+      <div class="box">
+        <h2>Micheleto</h2>
+        <br>
+        <p>Serviços</p>
+        <p>Sobre Micheleto</p>
+        <p>Notícias</p>
+        <p>Contato</p>
+        <p>Cursos</p>
+      </div>
+      <div class="box">
+        <h2>+ Informações</h2>
+        <br>
+        <p>Dúvidas</p>
+        <p>Política de Privacidade</p>
+      </div>
+      <div class="box">
+        <h2>Fale Comigo</h2>
+        <br>
+        <p>Telefone / WhatsApp</p>
+        <p><strong>Whatsapp:</strong>(11) 91072-5225</p>
+        <p><strong>E-mail:</strong>micheleto.ux@outlook.com</p>
+        <section class="social-icons">
+          <a href="#" class="social-icon">
+            <img src="img/footer/youtube (1).png" alt="youtube">
+          </a>
+          <a href="#" class="social-icon">
+            <img src="img/footer/instagram (2).png" alt="Instagram">
+          </a>
+          <a href="#" class="social-icon">
+            <img src="img/footer/linkedin (1).png" alt="LinkedIn">
+          </a>
+        </section>
+      </div>
+      <div class="box">
+        <h2>Newsletter</h2>
+        <br>
+        <p>Receba minhas promoções, novidades e conteúdos por email</p>
+        <div class="email-box">
+        <input type="email" id="email-input" placeholder="Digite seu e-mail">
+        <button class="enviar-button">Enviar</button>
+        </div>
+      </div>
+    </section>
+    <div class="direitos-autorais">
+      <p>&copy;2024 Micheleto. Todos os direitos reservados Micheleto.</p>
+    </div>
+  </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
+<!------------------------------------------- Footer ------------------------------------>

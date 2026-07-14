@@ -1,0 +1,498 @@
+/* -------------------------------- Geral / Menu ------------------------------- */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E2E2E2;
+  color: #fff;
+  cursor: none; /* Oculta o cursor padrão */
+}
+
+/* Estilização da barra de rolagem */
+body::-webkit-scrollbar {
+  width: 10px; /* largura da barra de rolagem */
+  background-color: #111; /* cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0D2EA0; /* cor do indicador da barra de rolagem */
+  border-radius: 10px; /* borda arredondada */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #222; /* cor da faixa da barra de rolagem */
+}
+
+/* Efeito de transição suave para a barra de rolagem */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0D2EA0; /* cor alterada ao passar o mouse */
+}
+
+/* Efeito de transição suave para a barra de rolagem */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #005d80; /* cor alterada ao clicar */
+}
+
+
+header {
+  background-color: #041553;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: 400px;
+  margin-top: 2px;
+}
+
+.menu-logo{
+ width: 60%;
+ height: auto;
+}
+
+.menu-pag{
+  margin-top: 6px;
+}
+
+.academy-border{
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.menu-imagem {
+  margin-left: 25px;
+}
+
+
+
+
+.sub-menu {
+  display: none;
+  background-color: rgba(75, 0, 0, 0.4); /* Altere a opacidade ajustando o último valor (0.9) */
+  padding: 30px;
+  min-width: 10px;
+  margin-left: 216px;
+  color: #2b0daf;
+}
+
+.expandable1:hover > .sub-menu {
+  display: block;
+}
+
+.expandable1 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 5.5rem;
+}
+
+.expandable2:hover > .sub-menu {
+  display: block;
+}
+
+.expandable2 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 3.5rem;
+}
+
+.expandable2:hover > .sub-menu {
+  display: block;
+}
+
+.expandable3 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 4.2rem;
+}
+
+.produtos{
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.sub-menu-produtos {
+  color: white;
+}
+
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed; /* Importante para o z-index funcionar */
+  z-index: 1; /* Defina um valor menor para ficar em segundo plano */
+  top: 0;
+  left: 0;
+  background-color: #0B2385;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar a{
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.content {
+  margin-left: 33.33%;
+  /* Rest of your content styles */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -------------------------------- Geral / Menu ------------------------------- */
+
+
+
+
+/* Container com animação de fundo */
+.container {
+  min-height: 100vh;  /* Ocupa a altura da tela */
+  width: 100vw;       /* Ocupa a largura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Gradiente principal com transparência no final */
+  background: linear-gradient(135deg, #000000, #0D2EA0), 
+              linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(226, 226, 226, 0)); /* Gradiente transparente no final revelando o background #E2E2E2 */
+  background-blend-mode: overlay;
+  background-size: 200% 200%, 100% 100%;   /* Animação aplicada ao gradiente principal, sem afetar a transparência */
+  animation: animate-bg 8s ease infinite; /* Animação que se repete infinitamente */
+  color: #ffffff;
+}
+
+/* Título */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Parágrafo */
+p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Loader (spinner) */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0D2EA0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+/* Animação do spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Animação do background */
+@keyframes animate-bg {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Seção de Cursos */
+.courses {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
+  justify-content: center; /* Centraliza os cards */
+  align-items: center;
+  background-color: #E2E2E2 ; /* Gradiente claro */
+}
+
+/* Estilos dos Cards */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;  /* Largura responsiva */
+  max-width: 300px;  /* Largura máxima */
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Adicionado transição para background e cor */
+  position: relative;
+  overflow: hidden;
+  margin: 20px; /* Espaçamento entre os cards */
+}
+
+/* Animação misteriosa no card */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0935d3;
+  transition: top 0.3s ease;
+}
+
+/* Card conteúdo */
+.card-content {
+  z-index: 2;
+  color: #000;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #0D2EA0;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #0D2EA0;
+}
+
+/* Efeito de seleção ao passar o mouse */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #0D2EA0; /* Fundo azul ao passar o mouse */
+  color: #ffffff; /* Texto branco ao passar o mouse */
+}
+
+/* Muda a cor do texto do conteúdo do card quando hover */
+.card:hover .card-content,
+.card:hover h2,
+.card:hover p {
+  color: #ffffff; /* Texto branco ao passar o mouse */
+}
+
+.card:hover::before {
+  top: 0; /* Animação misteriosa ao hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .loader {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card {
+    width: 90%;  /* Largura responsiva */
+    height: auto; /* Altura automática para manter proporção */
+    max-width: 250px; /* Largura máxima */
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .loader {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card {
+    width: 95%; /* Largura responsiva */
+    height: auto; /* Altura automática para manter proporção */
+    max-width: 200px; /* Largura máxima */
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+/* -------------------------------- Footer ------------------------------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px; /* Ajuste a distância do botão em relação à parte inferior */
+    right: 23px; /* Ajuste a distância do botão em relação à direita */
+    z-index: 9999; /* Certifique-se de que o botão esteja acima de outros elementos */
+  }
+  
+  .whatsapp-button img {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Torna a imagem circular */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    cursor: pointer;
+  }
+  
+  /* Efeito de hover para o botão */
+  .whatsapp-button img:hover {
+    background-color: #25d366; /* Cor de fundo quando o mouse passa por cima */
+  }
+  
+  .linha-vermelha {
+    width: 1010px;
+    height: 20px;
+    background-color: #0D2EA0;
+    border-radius: 5px; /* Isso cria bordas arredondadas */
+    margin: 0 auto; /* Isso centraliza a linha horizontalmente */
+  }
+  
+  .boxes {
+    display: flex;
+    padding: 0px 110px;
+    justify-content: space-between; /* Distribui os boxes igualmente na linha */
+  }
+  
+  .box {
+    flex: 1; /* Faz cada box ocupar o mesmo espaço na linha */
+    background: transparent;
+    text-align: left;
+    padding: 10px;
+    }
+  
+  .box h2 {
+    color: #0D2EA0;
+    margin: 0;
+  }
+  
+  .box p {
+    margin: 0;
+    padding-top: 10px;
+    color: #7D7D7D;
+  }
+  
+  .social-icons {
+    display: flex;
+    border-radius: 10px;
+    justify-content: left; /* Centraliza os ícones horizontalmente */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  .social-icon {
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+  }
+  
+  .social-icon img {
+    width: 40px; /* Largura dos ícones (ajuste conforme necessário) */
+    height: 40px; /* Altura dos ícones (ajuste conforme necessário) */
+  }
+  
+  .email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    font-size: 16px;
+  }
+  
+  button.enviar-button {
+    background-color: #0D2EA0;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.enviar-button:hover {
+    background-color: #061f7a;
+  }
+  
+  /* Estilo para a borda vermelha quando o campo estiver focado */
+  input[type="email"]:focus {
+    border: 2px solid #0D2EA0;
+    outline: none; /* Remove a borda padrão do navegador */
+  }
+  
+  
+  .direitos-autorais {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0D2EA0;
+    color: #fff;
+  }
+  
+
+/* -------------------------------- Footer ------------------------------- */

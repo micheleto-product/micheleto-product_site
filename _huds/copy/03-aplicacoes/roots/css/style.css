@@ -1,0 +1,428 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(255, 25, 25);
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* ------------------------ HEAD ------------------------- */
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 17px;  
+  margin-left: 400px;
+  margin-top: 2px;
+}
+
+.menu-logo{
+ width: 10%;
+ height: 10%;
+ margin-left: 4.5%; 
+}
+
+.menu-pag{
+  margin-top: 6px;
+}
+
+.menu-imagem {
+  margin-left: 25px;
+}
+
+
+.sub-menu {
+  display: none;
+  background-color: rgba(75, 0, 0, 0.4); /* Altere a opacidade ajustando o último valor (0.9) */
+  padding: 30px;
+  min-width: 10px;
+  margin-left: 216px;
+  color: #810101;
+}
+
+.expandable1:hover > .sub-menu {
+  display: block;
+}
+
+.expandable1 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 5.5rem;
+}
+
+.expandable2:hover > .sub-menu {
+  display: block;
+}
+
+.expandable2 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 3.5rem;
+}
+
+.expandable2:hover > .sub-menu {
+  display: block;
+}
+
+.expandable3 > a:after {
+  content: " ▼";
+  display: inline;
+  margin-left: 4.2rem;
+}
+
+.produtos{
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.sub-menu-produtos {
+  color: white;
+}
+
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed; /* Importante para o z-index funcionar */
+  z-index: 3; /* Defina um valor menor para ficar em segundo plano */
+  top: 0;
+  left: 0;
+  background-color: #d30000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar a{
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.content {
+  margin-left: 33.33%;
+  /* Rest of your content styles */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.load-more-products{
+  color: red;
+  font-size: 30px; 
+}
+
+/* ------------------------ HEAD ------------------------- */
+/* ------------------------ CORPO ------------------------ */
+
+.menu-blog{
+  padding: 5rem 10rem ;
+}
+
+.botao-menu-blog{
+  margin-top: 50px;
+}
+
+.botao-menu-blog .cta-button{
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.botao-menu-blog .cta-button:hover {
+  color: #d30000 ;
+  border: 2px solid red;
+  background-color: white; /* Cor de fundo quando o mouse passa por cima */
+}
+
+.arquitetura-de-produtos{
+ margin-top: 3rem;
+}
+
+.arquitetura-de-produtos a{
+  color: gray;
+  text-decoration: none;
+}
+
+.corpo{
+  padding: 0rem 20rem;
+}
+
+.title{
+  color: red;
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.title-red{
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.data-de-publicacao{
+  margin: 1.5rem;
+  font-size: 13px;
+  text-align: center;
+  color: #7D7D7D;
+}
+
+.data-de-publicacao a{
+  color: gray;
+  text-decoration: none;
+}
+
+.image-1{
+  width: 630px;
+  align-content: center;
+}
+
+.texto{
+  margin: 2rem;
+  font-size: 18px;
+  padding: 0px 0px 10px 0px;
+  color: #7D7D7D;
+}
+
+.texto a{
+  color: gray;
+  text-decoration: none;
+}
+
+.meio-de-funil .cta-button{
+  color: white ;
+  background-color: #810101; /* Cor de fundo quando o mouse passa por cima */
+  border-radius: 30px;
+  margin: 00px 110px;
+  padding: 10px 100px;
+  text-decoration: none;
+}
+
+
+
+.imagem-2{
+  width: 630px;
+  align-content: center;
+  margin: 50px 10px 0px 10px;
+  border-radius: 20px;
+}
+
+
+.imagem-3, .imagem-4, .imagem-5, .imagem-6{
+  width: 630px;
+  align-content: center;
+  margin: 10px 10px 0px 10px;
+  border-radius: 30px;
+}
+
+video{
+  max-width: 100%;
+  max-height: auto;
+}
+
+
+.texto-2{
+  background-color: #e4e4e4;
+  margin: 2rem;
+  font-size: 16px;  
+  padding: 30px 30px 30px 30px;
+  color: rgb(90, 90, 90);
+  border-radius: 20px ;
+  margin: 40px 40px;  
+}
+
+.text-3{
+  margin: -1rem 0rem 1rem 0rem;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
+  color: #7D7D7D;
+  background-color: transparent;
+}
+
+.features2 {
+  position: relative; /* Importante para o z-index funcionar */
+  z-index: 1; /* Defina um valor menor para ficar em segundo plano */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 30px 155px 0px 155px;
+}
+
+
+
+.feature2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEFEF;
+  width: 250px;
+  height: 270px;
+  padding-top:20px;
+  border-radius: 20px;
+}
+
+.feature2 p{
+  color: #7D7D7D;
+}
+
+
+.title-red-2{
+  color: gray;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 170px;
+}
+
+
+
+/* ------------------------ CORPO ------------------------ */
+/* ------------------------ RODAPÉ ------------------------ */
+
+.linha-vermelha {
+  width: 1010px;
+  height: 20px;
+  background-color: red;
+  border-radius: 5px; /* Isso cria bordas arredondadas */
+  margin: 0 auto; /* Isso centraliza a linha horizontalmente */
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px; /* Ajuste a distância do botão em relação à parte inferior */
+  right: 23px; /* Ajuste a distância do botão em relação à direita */
+  z-index: 9999; /* Certifique-se de que o botão esteja acima de outros elementos */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  border-radius: 50%; /* Torna a imagem circular */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+  cursor: pointer;
+}
+
+/* Efeito de hover para o botão */
+.whatsapp-button img:hover {
+  background-color: #25d366; /* Cor de fundo quando o mouse passa por cima */
+}
+
+
+.boxes {
+  display: flex;
+  padding: 0px 110px;
+  justify-content: space-between; /* Distribui os boxes igualmente na linha */
+}
+
+.box {
+  flex: 1; /* Faz cada box ocupar o mesmo espaço na linha */
+  background: transparent;
+  text-align: left;
+  padding: 10px;
+  }
+
+.box h2 {
+  color: red;
+  margin: 0;
+}
+
+.box p {
+  margin: 0;
+  padding-top: 10px;
+  color: #7D7D7D;
+}
+
+.social-icons {
+  display: flex;
+  border-radius: 10px;
+  justify-content: left; /* Centraliza os ícones horizontalmente */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.social-icon {
+  margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+}
+
+.social-icon img {
+  width: 40px; /* Largura dos ícones (ajuste conforme necessário) */
+  height: 40px; /* Altura dos ícones (ajuste conforme necessário) */
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button.enviar-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.enviar-button:hover {
+  background-color: darkred;
+}
+
+/* Estilo para a borda vermelha quando o campo estiver focado */
+input[type="email"]:focus {
+  border: 2px solid red;
+  outline: none; /* Remove a borda padrão do navegador */
+}
+
+
+.direitos-autorais {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #d30000;
+  color: #fff;
+}
+/* ------------------------ RODAPÉ ------------------------ */

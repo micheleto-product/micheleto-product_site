@@ -1,0 +1,614 @@
+/* -------------------------------- Geral / Menu ------------------------------- */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E2E2E2;
+    color: #fff;
+    cursor: none; /* Oculta o cursor padrão */
+}
+
+
+/* Estilização da barra de rolagem */
+body::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+    background-color: #111; /* cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #041553; /* cor do indicador da barra de rolagem */
+    border-radius: 10px; /* borda arredondada */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c5c3c3; /* cor da faixa da barra de rolagem */
+}
+
+/* Efeito de transição suave para a barra de rolagem */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #041553; /* cor alterada ao passar o mouse */
+}
+
+/* Efeito de transição suave para a barra de rolagem */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #005d80; /* cor alterada ao clicar */
+}
+
+
+header {
+  background-color: #041553;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 9999; /* Garante que a barra fique acima de outros elementos */
+  top: 0; /* Posiciona o topo do header na parte superior da tela */
+  left: 0; /* Posiciona o lado esquerdo do header na borda esquerda da tela */
+  width: 100%; /* Faz o header ocupar 100% da largura da tela */
+}
+
+.menu{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  max-width: 80%; /* Permite que o conteúdo ocupe no máximo 80% da largura da tela */
+  margin: 0 auto; /* Centraliza o container e adiciona margens automáticas */
+}
+  
+  .menu-icon {
+    cursor: pointer;
+    font-size: 17px;
+    padding-left: 41.5%;
+    padding-top: 0.65%;
+  }
+  
+  .menu-logo {
+    width: auto; /* Remove a largura fixa */
+    max-height: 40px; /* Define uma altura máxima para evitar distorção */
+  }
+  
+  .menu-pag{
+    margin-top: 0.9%;
+  }
+
+  .academy{
+  background-color: transparent; /* Torna o fundo transparente */
+  border: 3px solid white; /* Adiciona uma borda branca de 2px */
+  border-radius: 4px; /* Arredonda as bordas */
+  padding: 10px 10px 10px 10px;
+  }
+  
+  
+  .menu-imagem {
+    margin-left: 40px;
+    width: 40px;
+    max-height: auto;
+  }
+
+  .progress-container {
+    position: fixed;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 9999; /* Garante que a barra fique acima de outros elementos */
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: #666; /* Cor da barra de progresso */
+    transition: width 0.6 s ease-in-out; /* Adiciona uma transição suave */
+    border-radius: 0px 40px 40px 0px;
+  }
+  
+  
+  
+  .sub-menu {
+    display: none;
+    background-color: rgba(75, 0, 0, 0.4); /* Altere a opacidade ajustando o último valor (0.9) */
+    padding: 30px;
+    min-width: 10px;
+    margin-left: 216px;
+    color: #041553;
+  }
+  
+  .expandable1:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable2:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable3:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable4:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable5:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable6:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable7:hover > .sub-menu {
+    display: block;
+  }
+
+  .expandable8:hover > .sub-menu {
+    display: block;
+  }
+  
+  
+  .expandable1 > a:after {
+    content: " ▼";
+    display: inline-flex; /* Mudamos para inline-flex */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-left: 6.5rem;
+  }
+
+  
+  .expandable2 > a:after {
+    content: " ▼";
+    display: inline-flex; /* Mudamos para inline-flex */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-left: 5.3rem;
+  }
+  
+  
+  .expandable3 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 3.6rem;
+  }
+
+  .expandable4 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 5.6rem;
+  }
+
+  .expandable5 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 3.7rem;
+  }
+
+  .expandable6 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 3.5rem;
+  }
+
+  .expandable7 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 4.2rem;
+  }
+
+  .expandable8 > a:after {
+    content: " ▼";
+    display: inline;
+    margin-left: 1.2rem;
+  }
+
+  
+  
+  
+  .produtos{
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .sub-menu-produtos {
+    color: white;
+  }
+  
+  
+  .sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed; /* Importante para o z-index funcionar */
+    z-index: 9999; /* Defina um valor menor para ficar em segundo plano */
+    top: 0;
+    left: 0;
+    background-color: #041553;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+  }
+  
+  .sidebar a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 50px;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+  }
+  
+  .content {
+    margin-left: 33.33%;
+    /* Rest of your content styles */
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+/* -------------------------------- Geral / Menu ------------------------------- */
+
+
+
+
+
+
+
+main {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 80%; /* Permite que o conteúdo ocupe no máximo 80% da largura da tela */
+    margin: 0 auto; /* Centraliza o container e adiciona margens automáticas */
+    
+}
+
+.breadcrumb {
+    display: inline-block;
+    background-color: transparent;
+    color: #A1A1A1;
+    padding: 7% 0% 2% 0%;
+}
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+  
+a {
+    text-decoration: none;
+    color: #A1A1A1; /* Define a cor dos links como cinza */
+}
+
+.title-pag {
+  text-align: left;
+}
+
+.title-pag h1 {
+  font-size: 3.18rem;
+  color: #001458;
+  letter-spacing: -0.05em;
+}
+
+.title-pag img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  margin-top: 1.5%; /* Adiciona uma margem superior de 5% à imagem */
+}
+
+.accordion {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+.accordion summary {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  position: relative; /* Adiciona para posicionar o ícone */
+}
+
+
+.accordion summary h2{
+  color: #001458;
+  margin-left: 1rem;
+}
+
+.content{
+  margin: 0rem 3.8rem 0rem 4.2rem;
+}
+
+.accordion p{
+  text-align: left;
+  color: #7D7D7D;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.accordion li{
+  color: #001458;
+  margin-left: 50px;
+  padding: 0px 0px;
+}
+
+.accordion strong{
+  color: #001458;
+}
+
+.content-button{
+  text-align: center;
+}
+
+button{
+  background-color: #001458; 
+  color: #CFCFCF;
+  padding: 20px;
+  border-radius:30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+}
+
+.accordion summary .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 45px; 
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-image: url('../ux-strategy/img/main/US-UX-Strategy/seta.svg'); /* Substitua pelo caminho da sua imagem */
+  background-size: contain; 
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.circle {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #001458;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra-cinza {
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 3px; /* Ajuste a altura conforme necessário */
+  background-color: #CFCFCF; /* Cor cinza */
+  margin: 20px 0; /* Adiciona margem superior e inferior */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  text-align: center;
+  max-width: 80%; /* Permite que o conteúdo ocupe no máximo 80% da largura da tela */
+  margin: 0 auto; /* Centraliza o container e adiciona margens automáticas */
+  padding-bottom: 4rem;
+  
+}
+
+.carousel-container h2{
+  color: #001458;
+  padding: 3rem 0rem;
+  font-size: 2.48rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Calcula a largura com base no gap */
+  padding: 60px 20px;
+  background-color: #001458;
+  min-width: calc(33.33% - 20px); /* Largura mínima */
+  border-radius: 20px;
+}
+
+.card h3, p{
+  padding: 2rem;
+}
+
+.card img{
+  border-radius: 20px;
+}
+
+.icon-card {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url('../ux-strategy/img/main/US-UX-Strategy/alvo.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.card button{
+  background-color: #D9D9D9;
+  color: #fff;
+  border: 0;
+  padding: 1rem 6rem;
+  margin-bottom: 0rem;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  border: solid 2px #001458;
+}
+
+.active {
+  background-color: #001458;
+}
+
+
+
+/* -------------------------------- Footer ------------------------------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px; /* Ajuste a distância do botão em relação à parte inferior */
+    right: 23px; /* Ajuste a distância do botão em relação à direita */
+    z-index: 9999; /* Certifique-se de que o botão esteja acima de outros elementos */
+  }
+  
+  .whatsapp-button img {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Torna a imagem circular */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    cursor: pointer;
+  }
+  
+  /* Efeito de hover para o botão */
+  .whatsapp-button img:hover {
+    background-color: #25d366; /* Cor de fundo quando o mouse passa por cima */
+  }
+  
+  .linha-vermelha {
+    max-width: 1540px;
+    height: 20px;
+    background-color: #041553;
+    border-radius: 5px; /* Isso cria bordas arredondadas */
+    margin: 0 auto; /* Isso centraliza a linha horizontalmente */
+  }
+  
+  .boxes {
+    display: flex;
+    padding: 20px 180px;
+    justify-content: space-between; /* Distribui os boxes igualmente na linha */
+  }
+  
+  .box {
+    flex: 1; /* Faz cada box ocupar o mesmo espaço na linha */
+    background: transparent;
+    text-align: left;
+    padding: 10px;
+    }
+  
+  .box h2 {
+    color: #041553;
+    margin: 0;
+  }
+  
+  .box p {
+    margin: 0;
+    padding-top: 10px;
+    color: #7D7D7D;
+  }
+  
+  .social-icons {
+    display: flex;
+    border-radius: 10px;
+    justify-content: left; /* Centraliza os ícones horizontalmente */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  .social-icon {
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+  }
+  
+  .social-icon img {
+    width: 40px; /* Largura dos ícones (ajuste conforme necessário) */
+    height: 40px; /* Altura dos ícones (ajuste conforme necessário) */
+  }
+  
+  .email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    font-size: 16px;
+  }
+  
+  button.enviar-button {
+    background-color: #041553;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.enviar-button:hover {
+    background-color: rgb(19, 50, 161);
+  }
+  
+  /* Estilo para a borda vermelha quando o campo estiver focado */
+  input[type="email"]:focus {
+    border: 2px solid #041553;
+    outline: none; /* Remove a borda padrão do navegador */
+  }
+  
+  
+  .direitos-autorais {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #041553;
+    color: #fff;
+  }
+  
+
+/* -------------------------------- Footer ------------------------------- */

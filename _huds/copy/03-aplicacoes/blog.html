@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Landing Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <img class="menu-logo" src="#">
+        <li class="menu-icon" onclick="toggleMenu()">&#9776;<a href="#">Serviços</a></li>
+        <li class="menu-pag"><a href="">Quem é Micheleto</a></li>
+        <li class="menu-pag"><a href="">Aplicações</a></li>
+        <li class="menu-pag"><a href="">Contato</a></li>
+        <li class="menu-pag"><a href="">Cursos</a></li>
+        <img src="img/lupa.png" width="1%" height="1%" class="menu-imagem">
+        <img src="img/carrinho.png" width="1%" height="1%" class="menu-imagem">
+        <img src="img/like.png" width="1%" height="1%" class="menu-imagem">
+      </ul>
+    </nav>
+  </header>
+
+    <aside class="sidebar" id="sidebar">
+        <ul class="sub-menu-produtos">
+            <h2 class="produtos"> Serviços </h2>
+            <li class="expandable1"><a href="">Criação</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Armários</a></li>
+                    <li><a href="#">Roupeiros</a></li>
+                    <li><a href="#">Estantes</a></li>
+                    <li><a href="#">Arquivos</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </li>
+            <li class="expandable2"><a href="">Marketing</a>
+                <ul class="sub-menu">
+                    <li><a href="#"> Marketing </a></li>
+                    <li><a href="#">Sistemas de trabalho</a></li>
+                    <li><a href="#">Telemarketing</a></li>
+                    <li><a href="#">Balcões Recepção</a></li>
+                    <li><a href="#">Armazenamento</a></li>
+                </ul>
+            </li>
+            <li class="expandable3"><a href="">Empreendedorismo</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Poltronas</a></li>
+                    <li><a href="#">Cadeiras</a></li>
+                    <li><a href="#">Banquetas</a></li>
+                    <li><a href="#">Sofás</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <section class="title">
+        <h1> Sobre Marketing </h1>
+        <img src="#" width="70%"> 
+    </section>
+
+    <section>
+        <div class="categories">
+            <select id="category">
+                <option value="todos">Todos os produtos</option>
+                <option value="operacionais">Operacionais</option>
+                <option value="Diretivas">Diretivas</option>
+                <option value="livros">Especiais</option>
+                <option value="livros">Universitária</option>
+                <option value="livros">Coletividade</option>
+                <option value="livros">Auditório</option>
+            </select>
+        </div>
+
+        <div class="category-buttons">
+            <button class="category-button" data-category="todos">Todos</button>
+            <button class="category-button" data-category="Operacionais">SEO</button>
+            <button class="category-button" data-category="Diretivas">Design</button>
+            <button class="category-button" data-category="Especiais">Relações Publicas</button>
+            <button class="category-button" data-category="Universitária">Audiovisual</button>
+            <button class="category-button" data-category="Coletividade">Programação</button>
+            <button class="category-button" data-category="Auditório">Empreendedorismo</button>
+        </div>
+
+        <div class="product-grid">  
+        <div class="product Operacionais">
+            <img src="#" class="product-img">
+            <h4 class="text-product">Como remover backlinks (e limpar seu perfil de link) </h4>
+            <p class="valor-product">Então, você tem alguns backlinks ruins? Seja qual for a causa, veja como lidar com a remoção e a rejeição...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+
+        <div class="product Diretivas">
+            <img src="#" class="product-img">
+            <h4 class="text-product">Como visualizar dados do Ahrefs com ChatGPT</h4>
+            <p class="valor-product">Tenho experimentado a visualização de dados do Ahrefs usando GPT-4, então pensei em compartilhar os resultados com todos vocês...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+
+        <div class="product Diretivas">
+            <img src="#" class="product-img">
+            <h4 class="text-product">O conteúdo de IA é arbitragem de curto prazo, não estratégia de longo prazo</h4>
+            <p class="valor-product">Além da dose de dopamina causada pela publicação de mil artigos, os aspectos negativos do conteúdo de IA superam os positivos...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+
+        <div class="product Especiais">
+            <img src="#" class="product-img">
+            <h4 class="text-product">KPIs de marketing: 30 métricas para cada função de marketing</h4>
+            <p class="valor-product">Aprenda como medir seu desempenho e compartilhar suas vitórias...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+
+        <div class="product Universitária">
+            <img src="#" class="product-img">
+            <h4 class="text-product">Como usar Ahrefs e ChatGPT para melhorar seu SEO</h4>
+            <p class="valor-product">Aprenda 7 maneiras de combinar ChatGPT e Ahrefs para ter sucesso em SEO...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+
+        <div class="product Coletividade">
+            <img src="#" class="product-img">
+            <h4 class="text-product">O que há de novo no Ahrefs? (janeiro de 2024)</h4>
+            <p class="valor-product">Apresentando um novo recurso de IA para identificar a intenção de pesquisa, “melhores links” na Visão Geral 2.0, problemas de usabilidade móvel na Auditoria do Site e muito mais...</p>
+            <br>
+            <div class="publicity-destaques"> 
+                <a href="#" class="cta-button">Conheça mais</a> 
+            </div>
+        </div>
+        
+        <div class="load-more-products"><center>Carregar</center></div>
+
+        <!-- ... Outros produtos ... -->
+    </section>
+    
+
+
+
+  
+    <footer>
+        <section>
+            <div class="whatsapp-button">
+                <a href="https://api.whatsapp.com/send?phone=11910725225" target="_blank">
+                    <img src="img/whatsapp/whatsapp (2).png " alt="WhatsApp">
+                </a>
+            </div>
+        </section>
+        <div class="linha-vermelha"></div>
+            <br>
+        <section class="boxes">
+            <div class="box">
+                <h2>MICHELETO MARKETING</h2>
+                <br>
+                <p>Serviços</p>
+                <p>Quem é Micheleto</p>
+                <p>Aplicações</p>
+                <p>Contato</p>
+                <p>Cursos</p>
+            </div>
+            <div class="box">
+                <h2>+ INFORMAÇÕES</h2>
+                <br>
+                <p>Dúvidas</p>
+                <p>Política de Privacidade</p>
+                <p>Marcas parceiras</p>
+            </div>
+            <div class="box">
+                <h2>FALE COMIGO</h2>
+                <br>
+                <p>Telefone / WhatsApp</p>
+                <p><strong>Whatsapp:</strong>(11) 91072-5225</p>
+                <p><strong>E-mail:</strong>micheleto.mkt@outlook.com</p>
+                <section class="social-icons">
+                <a href="#" class="social-icon">
+                    <img src="img/icons/youtube (1).png" alt="youtube">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/icons/instagram (2).png" alt="Instagram">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/icons/linkedin (1).png" alt="LinkedIn">
+                </a>
+                </section>
+            </div>
+            <div class="box">
+                <h2>NEWSLETTER</h2>
+                <br>
+                <p>Receba minhas promoções, novidades e conteúdos por email</p>
+                <div class="email-box">
+                <input type="email" id="email-input" placeholder="Digite seu e-mail">
+                <button class="enviar-button">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="direitos-autorais">
+            <p>&copy;2024 Micheleto - Consultoria e Serviços de Marketing. Todos os direitos reservados. Micheleto</p>
+        </div>
+    </footer>
+
+  
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
